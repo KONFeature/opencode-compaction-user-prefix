@@ -1,0 +1,39 @@
+{
+  "name": "opencode-compaction-user-prefix",
+  "version": "0.1.0",
+  "description": "opencode plugin that prepends a synthetic user message when a compacted conversation would otherwise start with an assistant tool-call, avoiding the Anthropic `tool_use` without `tool_result` error.",
+  "type": "module",
+  "main": "compaction-user-prefix.js",
+  "exports": {
+    ".": "./compaction-user-prefix.js"
+  },
+  "files": [
+    "compaction-user-prefix.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "anthropic",
+    "claude",
+    "compaction",
+    "tool-use"
+  ],
+  "author": "Quentin Nivelais <quentin@nivelais.com> (https://github.com/KONFeature)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KONFeature/opencode-compaction-user-prefix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KONFeature/opencode-compaction-user-prefix/issues"
+  },
+  "homepage": "https://github.com/KONFeature/opencode-compaction-user-prefix#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
