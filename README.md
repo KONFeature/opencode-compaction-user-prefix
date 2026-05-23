@@ -25,20 +25,6 @@ The plugin hooks `experimental.chat.messages.transform`, which receives the same
 
 This is safe on the normal chat path because real chat already begins with a user message, in which case the `!== "assistant"` check short-circuits and nothing is prepended.
 
-## Install
-
-```sh
-npm install opencode-compaction-user-prefix
-```
-
-Or with bun / pnpm / yarn:
-
-```sh
-bun add opencode-compaction-user-prefix
-pnpm add opencode-compaction-user-prefix
-yarn add opencode-compaction-user-prefix
-```
-
 ## Use
 
 Register the plugin in your opencode config (`opencode.json` or `~/.config/opencode/opencode.json`):
@@ -48,12 +34,6 @@ Register the plugin in your opencode config (`opencode.json` or `~/.config/openc
   "$schema": "https://opencode.ai/config.json",
   "plugin": ["opencode-compaction-user-prefix"]
 }
-```
-
-Or import it directly in a local plugin file:
-
-```js
-export { CompactionUserPrefixPlugin as default } from "opencode-compaction-user-prefix"
 ```
 
 ## License
